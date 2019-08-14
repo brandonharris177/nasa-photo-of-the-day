@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Picture from "./components/GetData/goGetData";
+import Picture from "./components/component-parts/goGetData";
 
 function App() {
   return (

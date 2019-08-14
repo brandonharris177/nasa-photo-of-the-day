@@ -1,13 +1,15 @@
 import React from "react";
 
-const DisplayPicture = (props) => {
+const Display = (props) => {
   // console.log(props.url);
   return (
     <>
-    <h1>{props.title}</h1>
+    <div className = "header">
+      <h1>{props.title}</h1>
+    </div>
     <img className = "image" src = {props.picture} alt = {props.title}/>
     </>
   );
 };
 
-export default DisplayPicture;
+export default Display;
