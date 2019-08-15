@@ -1,5 +1,5 @@
 import React from "react";
-import "./Display.css"
+import "./Display.scss"
 
 const Display = (props) => {
   // console.log(props.url);

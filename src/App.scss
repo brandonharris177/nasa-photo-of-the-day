@@ -3,6 +3,7 @@
   background-image: url("https://images.pexels.com/photos/783944/pexels-photo-783944.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); 
   background-origin: top right;
   background-size: 100%;
+  background-attachment: fixed;
 }
 
 .App-logo {
@@ -43,5 +44,5 @@
 
 .blank {
   display: flex;
-  height: 150px;
+  height: 400px;
 }

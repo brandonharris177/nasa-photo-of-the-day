@@ -1,5 +1,5 @@
 import React from "react";
-import "./Title.css"
+import "./Title.scss"
 
 const TitleCreator = (props) => {
   // console.log(props.url);

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Date.css"
+import "./Date.scss"
 
 const DateCreator = (props) => {
   // console.log(props.url);
