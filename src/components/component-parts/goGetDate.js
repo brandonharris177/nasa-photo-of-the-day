@@ -3,27 +3,23 @@ import axios from "axios";
 
 //import any components needed
 
-import Display from "./Display"
+import DateCreator from "./Date"
 
-export default function Picture () {
+export default function Date () {
     // STEP 2 - add the imported data to state
-    const [pictureState, setPicture] = useState();
-    const [titleState, setTitle] = useState();
+    const [dateState, setDate] = useState();
     useEffect(() => {
       axios
         .get(`https://api.nasa.gov/planetary/apod?api_key=uzeRVscCfa8BTM5kyf8tI0jTf5nWgcegcugkPqFd`)
         .then(response => {
-          const imageUrl = response.data.url;
-          const titleUrl = response.data.title;
-          // console.log(imageUrl);
+          const date = response.data.date;
         //   console.log(titleUrl);
-          setPicture(imageUrl);
-          setTitle(titleUrl)
+          setDate(date);
         });
     }, [] )
     return (
         <>
-        <Display picture = {pictureState} title = {titleState}/>
+        <DateCreator date = {dateState}/>
         </>
     );
   };
