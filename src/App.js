@@ -14,6 +14,8 @@ function App() {
         <Display/>
       </div>
       <div>
+      <div className = "blank">
+      </div>
         <Date/>
       </div>
     </div>
